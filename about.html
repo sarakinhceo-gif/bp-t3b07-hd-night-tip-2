@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="organic-stripe">
+    <meta name="bpaas-design-theme" content="kr-organic-stripe">
+    <title>홍대 유흥 꿀팁 | 정보 — 진짜를 걸러내는 법</title>
+    <meta name="description" content="홍대 유흥 꿀팁, 가짜 리뷰에 속지 마라. bro가 직접 발로 뛰고 검증한 홍대 밤문화의 모든 정보. 전화 010-6279-0862">
+    <meta name="keywords" content="홍대 유흥 정보, 홍대 클럽 꿀팁, 홍대 술집 추천, 홍대 밤문화, 홍대 놀거리, 홍대 핫플, 홍대 유흥">
+    <link rel="canonical" href="https://t3b07-hd-night-tip-2.vercel.app/info">
+    <meta property="og:title" content="홍대 유흥 꿀팁 | 정보 — 가짜는 걸러라">
+    <meta property="og:description" content="홍대 유흥 정보, bro가 직접 검증한 진짜만 남겼다. 가짜 리뷰, 낚시 홍보는 이제 그만.">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f6f2;
+            color: #1a1a2e;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: #1a1a2e;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #f8f6f2;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+        .logo span {
+            color: #e94560;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #f8f6f2;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #e94560;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            width: 25px;
+            height: 2px;
+            background: #f8f6f2;
+            transition: 0.3s ease;
+        }
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 70%;
+            height: 100vh;
+            background: #1a1a2e;
+            padding: 80px 30px 30px;
+            transition: right 0.4s ease;
+            z-index: 999;
+            box-shadow: -5px 0 30px rgba(0,0,0,0.3);
+        }
+        .mobile-menu.active {
+            right: 0;
+        }
+        .mobile-menu a {
+            display: block;
+            color: #f8f6f2;
+            text-decoration: none;
+            padding: 15px 0;
+            font-size: 1.1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .mobile-menu { display: block; }
+        }
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #f8f6f2;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 15px;
+        }
+        .hero h1 span {
+            color: #e94560;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: #a0a0b0;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 40px;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #e94560;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            color: #1a1a2e;
+        }
+        .card p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+        .card .badge {
+            display: inline-block;
+            background: #e94560;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+        .faq {
+            margin-top: 40px;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .faq-item:hover {
+            background: #f0eeea;
+        }
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.05rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.4rem;
+            color: #e94560;
+            transition: transform 0.3s ease;
+        }
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+            color: #555;
+            font-size: 0.95rem;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding-top: 15px;
+        }
+        .cta-section {
+            background: #1a1a2e;
+            color: #f8f6f2;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+        .cta-section p {
+            font-size: 1.1rem;
+            color: #a0a0b0;
+            margin-bottom: 25px;
+        }
+        .btn {
+            display: inline-block;
+            background: #e94560;
+            color: #fff;
+            padding: 14px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .btn:hover {
+            background: #d63850;
+            transform: scale(1.03);
+        }
+        .btn-tel {
+            background: transparent;
+            border: 2px solid #e94560;
+            margin-left: 10px;
+        }
+        .btn-tel:hover {
+            background: #e94560;
+        }
+        footer {
+            background: #111;
+            color: #777;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .section-title { font-size: 1.5rem; }
+            .cta-section h2 { font-size: 1.6rem; }
+            .btn { display: block; margin: 10px auto; width: fit-content; }
+            .btn-tel { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav-wrapper">
+            <a href="/" class="logo">BRO<span>NIGHT</span></a>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/info">정보</a></li>
+                <li><a href="/spots">스팟</a></li>
+                <li><a href="/tips">꿀팁</a></li>
+                <li><a href="tel:010-6279-0862">전화</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="/">홈</a>
+            <a href="/info">정보</a>
+            <a href="/spots">스팟</a>
+            <a href="/tips">꿀팁</a>
+            <a href="tel:010-6279-0862">전화</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>정보는 <span>힘</span>이다</h1>
+            <p>가짜 리뷰, 낚시 홍보에 속지 마라. bro가 직접 검증하고 걸러낸 홍대 유흥의 진짜 정보만 공개한다.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">📍 홍대 유흥 지역 분석</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <span class="badge">🔥 핵심</span>
+                    <h3>메인 스트리트 vs 뒷골목</h3>
+                    <p>홍대입구역 3번 출구에서 시작되는 메인 스트리트는 관광객과 낚시 업소가 넘친다. 진짜는 상수역 쪽 뒷골목에 있다. bro가 확인한 결과, 3블록 안쪽으로 들어가면 가격은 반값, 퀄리티는 두 배.</p>
+                </div>
+                <div class="card">
+                    <span class="badge">⏰ 타임라인</span>
+                    <h3>시간대별 공략법</h3>
+                    <p>오후 8시~10시: 가성비 좋은 술집 공략. 오전 12시~2시: 클럽 피크 타임, 입장료 폭등. 오전 3시 이후: 진짜 헌터들을 위한 시간, 가격이 싸지고 분위기가 살아난다. bro는 새벽 2시 이후를 추천한다.</p>
+                </div>
+                <div class="card">
+                    <span class="badge">💰 꿀팁</span>
+                    <h3>가격 협상의 기술</h3>
+                    <p>홍대 유흥 업소는 대부분 호갱 가격이 기본이다. bro의 전략: 처음 제시된 가격에 절대 응하지 말고, "친구가 더 싸게 갔다"는 말로 20~30% 할인을 받아라. 안 깎아주면 바로 발길을 돌려라.</p>
+                </div>
+                <div class="card">
+                    <span class="badge">🚨 주의</span>
+                    <h3>가짜 리뷰 걸러내는 법</h3>
+                    <p>별점 5점에 리뷰 100개 이상인 업소는 90%가 조작이다. bro의 팁: 리뷰어 프로필을 확인해라. 사진 한 장, 리뷰 하나만 있는 계정은 무조건 가짜. 진짜 맛집은 별점 4.0~4.3 사이에 숨어있다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #f0eeea;">
+        <div class="container">
+            <h2 class="section-title">❓ 자주 묻는 질문</h2>
+            <div class="faq">
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">홍대 유흥, 진짜 예산은 얼마나 들어?</div>
+                    <div class="faq-answer">bro 기준: 술집 3~5만원, 클럽 입장료 1~3만원, 추가 비용은 니가 얼마나 하느냐에 달렸다. 호구 잡히면 20만원도 순삭이니까 위 정보를 잘 활용해라.</div>
+                </div>
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">처음 가는 사람한테 추천하는 코스는?</div>
+                    <div class="faq-answer">저녁 8시에 상수역 뒷골목에서 가성비 술집으로 시작, 11시쯤 메인 스트리트 구경, 12시에 클럽 한 곳만 정해서 가라. 여러 군데 돌아다니지 마라, 돈만 날리고 피곤해진다.</div>
+                </div>
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">여자 혼자 가도 괜찮아?</div>
+                    <div class="faq-answer">시간과 장소를 가려라. 오후 10시 이전, 메인 스트리트는 안전하다. 하지만 새벽 2시 이후 뒷골목은 위험할 수 있으니 그룹으로 다니거나 bro에게 전화해라. 010-6279-0862, 24시간 상담 가능.</div>
+                </div>
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">가짜 리뷰 업소 블랙리스트 있어?</div>
+                    <div class="faq-answer">있다. bro가 직접 경험하고 걸러낸 업소 리스트는 전화 문의로만 공개한다. 010-6279-0862로 연락해라. 인터넷에 올리면 업주들이 난리치니까.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>진짜 정보가 필요하다면?</h2>
+            <p>인터넷에 떠도는 가짜 정보는 이제 그만. bro가 직접 검증하고 업데이트하는 홍대 유흥 정보를 지금 바로 확인해라.</p>
+            <a href="tel:010-6279-0862" class="btn">📞 전화 상담 010-6279-0862</a>
+            <a href="/spots" class="btn btn-tel">🔥 스팟 보러 가기</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="
+</body>
+</html>
